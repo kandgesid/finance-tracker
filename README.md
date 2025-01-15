@@ -4,11 +4,11 @@
 
 ### https://finance-tracker-xi-nine.vercel.app/
 
-<!-- <div align="center">
-  <img alt="Demo" src="./Assets/chatify.png" />
+<div align="center">
+  <img alt="Demo" src="./public/pocketInsights.png" />
 </div>
 
-</div> -->
+</div>
 
 ## Build With
 
