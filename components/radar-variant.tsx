@@ -1,4 +1,3 @@
-import { formatPercentage } from "@/lib/utils";
 import {
     PolarAngleAxis,
     PolarGrid,
@@ -6,12 +5,7 @@ import {
     Radar,
     RadarChart,
     ResponsiveContainer,
-    Tooltip
 } from "recharts"
-import { CategoryTooltip } from "./category-tooltip";
-
-
-const COLORS = ["#0062FF", "#12C6FF", "#FF9354", "FF9354"];
 
 type Props = {
     data?: {

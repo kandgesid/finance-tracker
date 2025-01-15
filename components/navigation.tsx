@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { NavButton } from "@/components/nav-button";
-import { useMap, useMedia } from "react-use";
+import { useMedia } from "react-use";
 import { 
     Sheet, 
     SheetContent,

@@ -7,7 +7,6 @@ import { and, eq, inArray } from "drizzle-orm";
 import { zValidator } from "@hono/zod-validator";
 import {createId} from "@paralleldrive/cuid2";
 import { z } from "zod";
-import { error } from "console";
 
 
 const app = new Hono()
@@ -83,8 +82,6 @@ const app = new Hono()
                 userId: auth.userId,
                 ...values
             }).returning();
-
-            console.log(data);
 
             return c.json({ data })
         } 

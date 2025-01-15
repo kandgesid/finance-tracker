@@ -5,16 +5,8 @@ import {format, subDays} from "date-fns";
 import { DateRange } from "react-day-picker";
 import { ChevronDown } from "lucide-react";
 
-import {
-    Select,
-    SelectContent,
-    SelectTrigger,
-    SelectItem,
-    SelectValue
-} from "./ui/select";
-
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import {cn, formateDateRange } from "@/lib/utils";
+import {formateDateRange } from "@/lib/utils";
 import { Button } from "./ui/button";
 import { Calendar } from "./ui/calendar";
 

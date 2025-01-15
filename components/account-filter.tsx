@@ -32,7 +32,7 @@ export const AccountFilter = () => {
 
     function stringifyWithSkipEmpty(obj: any) {
         const filteredObj = Object.fromEntries(
-          Object.entries(obj).filter(([_, value]) => value !== '')
+          Object.entries(obj).filter(([value]) => value !== '')
         );
         return qs.stringify(filteredObj, { skipNulls: true });
     }
@@ -65,7 +65,7 @@ export const AccountFilter = () => {
                 <SelectValue placeholder="Select account"/>
             </SelectTrigger>
             <SelectContent>
-                <SelectItem value="all">
+                <SelectItem value="all" className="text-center">
                     All accounts
                 </SelectItem>
                 {accounts?.map((account) => (

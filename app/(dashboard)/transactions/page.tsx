@@ -9,7 +9,7 @@ import { DataTable } from "@/components/data-table";
 import { useGetTransactions } from "@/features/transactions/api/use-get-transactions";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useBulkDeleteTransactions } from "@/features/transactions/api/use-bulk-delete-transactions";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { UploadButton } from "./upload-button";
 import { ImportCard } from "./import-card";
 import { transactions as transactionSchema } from "@/db/schema";
@@ -28,8 +28,14 @@ const INITIAL_IMPORT_RESULTS = {
     error: [],
     meta: {},
 };
-
-
+function TransactionPageComp() {
+    return (
+        <Suspense>
+            < TransactionsPage />
+        </Suspense>
+       
+    );
+}
 const TransactionsPage = () => {
     const [AccountDialouge, confirm] = useSelectAccount();
     const [variant, setVariant] = useState<VARIANTS>(VARIANTS.LIST);
@@ -142,4 +148,4 @@ const TransactionsPage = () => {
     );
 };
 
-export default TransactionsPage;
+export default TransactionPageComp;

@@ -97,8 +97,6 @@ export const DataCard = ({
     )
 };
 
-Skeleton
-
 export const DataCardLoading= () => {
     return (
         <Card className="border-none drop-shadow-sm h-[192px]">

@@ -1,7 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { UploadButton } from "./upload-button";
 import { useState } from "react";
 import { ImportTable } from "./import-table";
 import { convertAmountToMiliunits } from "@/lib/utils";
@@ -67,7 +65,7 @@ export const ImportCard = ({
                 const columnIndex = index;
                return selectedColumns[`column_${columnIndex}`] || null;
             }),
-            body: body.map((row, index) => {
+            body: body.map((row) => {
                 const transformedRow = row.map((cell, index) => {
                     const columnIndex = index;
                     return selectedColumns[`column_${columnIndex}`] ? cell : null;
