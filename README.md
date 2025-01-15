@@ -1,5 +1,3 @@
-<div align="center">
-
 # Pocket Insights
 
 ### Track all your accounts and transactions in one place and unlock powerful insights into your spending habits.
