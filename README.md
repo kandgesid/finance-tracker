@@ -27,11 +27,18 @@
 - **Powerful Insights at Your Fingertips:** Gain detailed insights into your income and expenses, categorized for clarity.
 - **Customizable Filtering:** Analyze your financial data for specific categories or time intervals with flexible filters.
 
+## Csv File Format For Upload:
+
+```
+Type,Product,Started Date,Completed Date,Description,Amount,Fee,Currency,State,Balance
+CARD_PAYMENT,Current,2024-01-08 20:18:58,2024-01-09 11:58:22,Shop,-13.27,0.00,USD,COMPLETED,19.79
+CARD_PAYMENT,Current,2024-01-09 20:02:00,2024-01-10 02:50:21,Texts,-4.59,0.00,USD,COMPLETED,15.20
+```
 ## Installation and Usage
 
 ### Clone this repository
 
-`git clone https://github.com/kandgesid/finance-tracker.git` <br/>
+`git clone https://github.com/kandgesid/finance-tracker.git` <br/> <br/>
 `cd finance-tracker`
 
 ### Install Dependencies
