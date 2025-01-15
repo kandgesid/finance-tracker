@@ -8,7 +8,7 @@ export default function Page() {
         <div className="h-full lg:flex flex-col items-center justify-center px-4">
             <div className="text-center space-y-4 pt-16">
                 <h1 className="font-bold text-3l text-[#2E2A47]">
-                    Welcome Back! ❤️
+                    Welcome Back!
                 </h1>
                 <p className="text-base text-[#7E8CA0]">
                     Log in or create account to get back to dashboards!
@@ -24,7 +24,7 @@ export default function Page() {
             </div>
         </div>
         <div className="h-full bg-blue-600  hidden lg:flex flex-col items-center justify-center ">
-            <Image src={"/logo.svg"} height={100} width={100} alt='logo'/>
+            <Image src={"/new_logo.svg"} height={100} width={100} alt='logo'/>
         </div>
     </div>
    

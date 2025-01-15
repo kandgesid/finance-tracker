@@ -83,8 +83,6 @@ const app = new Hono()
                 ...values
             }).returning();
 
-            console.log(data);
-
             return c.json({ data })
         } 
     )

@@ -78,9 +78,6 @@ export const app = new Hono()
                 lastPeriodEnd
             );
 
-
-            console.log("Last Period" + lastPeriod.remaining + "\n");
-            console.log("current Period" + currentPeriod.remaining + "\n");
             const incomeChange = calculatePercentageChange(currentPeriod.income, lastPeriod.income);
             const expenseChange = calculatePercentageChange(currentPeriod.expenses, lastPeriod.expenses);
             const remainingChange = calculatePercentageChange(currentPeriod.remaining, lastPeriod.remaining);

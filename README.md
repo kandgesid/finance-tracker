@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# Pocket Insights
 
-First, run the development server:
+### Track all your accounts and transactions in one place and unlock powerful insights into your spending habits.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### https://finance-tracker-xi-nine.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- <div align="center">
+  <img alt="Demo" src="./Assets/chatify.png" />
+</div>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div> -->
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build With
 
-## Learn More
+- `Next.js`
+- `React.js`
+- `TypeScript`
+- `React Icons`
+- `Neon`
+- `drizzle`
 
-To learn more about Next.js, take a look at the following resources:
+## Features:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Effortless Google Sign-In:** Log in instantly with your Google account and get started in seconds.
+- **Full Control Over Accounts:** Seamlessly create, edit, and manage your accounts, categories, and   transactions.
+- **Bank Transactions Made Simple:** Easily import your bank transactions via CSV and keep your records up to date.
+- **Powerful Insights at Your Fingertips:** Gain detailed insights into your income and expenses, categorized for clarity.
+- **Customizable Filtering:** Analyze your financial data for specific categories or time intervals with flexible filters.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Installation and Usage
 
-## Deploy on Vercel
+### Clone this repository
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`git clone https://github.com/kandgesid/finance-tracker.git` <br/>
+`cd finance-tracker`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Install Dependencies
+
+`npm install`
+
+In the project directory, you can run:
+
+### npm start
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### npm run build
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
