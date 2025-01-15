@@ -1,0 +1,41 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1734146298258,
+      "tag": "0000_windy_katie_power",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1734147237598,
+      "tag": "0001_curly_captain_cross",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1734333711691,
+      "tag": "0002_dashing_doorman",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1734644218178,
+      "tag": "0003_lean_richard_fisk",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1734644395599,
+      "tag": "0004_high_captain_stacy",
+      "breakpoints": true
+    }
+  ]
+}
