@@ -47,7 +47,7 @@ CARD_PAYMENT,Current,2024-01-09 20:02:00,2024-01-10 02:50:21,Texts,-4.59,USD,COM
 
 In the project directory, you can run:
 
-### npm start
+### npm run start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -58,4 +58,3 @@ You will also see any lint errors in the console.
 ### npm run build
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
