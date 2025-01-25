@@ -1,9 +1,9 @@
 import { Hono } from "hono";
 
 import {db} from "@/db/drizzle";
-import {accounts, insertAccountSchema} from "@/db/schema";
+import {accounts, insertAccountSchema, transactions} from "@/db/schema";
 import { clerkMiddleware, getAuth } from "@hono/clerk-auth";
-import { and, eq, inArray } from "drizzle-orm";
+import { and, desc, eq, inArray, sql } from "drizzle-orm";
 import { zValidator } from "@hono/zod-validator";
 import {createId} from "@paralleldrive/cuid2";
 import { z } from "zod";
@@ -22,10 +22,18 @@ const app = new Hono()
             const data = await db.select({
                 id: accounts.id,
                 name: accounts.name,
+                balance: sql`SUM(CASE WHEN ${transactions.amount} is NULL THEN 0 ELSE ${transactions.amount} END)`.mapWith(Number),
             })
             .from(accounts)
-            .where(eq(accounts.userId, auth.userId));
-
+            .leftJoin(transactions,
+                eq(accounts.id, transactions.accountId)
+            )
+            .where(eq(accounts.userId, auth.userId))
+            .groupBy(accounts.name, accounts.id)
+            .orderBy(desc(
+                sql`SUM(${transactions.amount})`
+            ));
+            
             return c.json({data});
     })
     .get("/:id", 

@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 
 import {client} from "@/lib/hono"
+import { convertAmountFromMiliunits } from "@/lib/utils";
 
 export const useGetAccounts = () => {
     const query = useQuery({
@@ -13,7 +14,11 @@ export const useGetAccounts = () => {
             }
 
             const { data } = await resposne.json();
-            return data;
+            
+            return data.map((info) => ({
+                ...info,
+                balance: convertAmountFromMiliunits(info.balance),
+            }));
         }
     });
 
